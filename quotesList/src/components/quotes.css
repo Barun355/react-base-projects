@@ -1,0 +1,113 @@
+/* Kraken Design System - Quote Card Component (Dark Mode - Minimal) */
+
+.quote-card {
+  background-color: #1a1a1f;
+  border: 1px solid #2a2a35;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 24px;
+}
+
+.quote-card:hover {
+  border-color: #7132f5;
+  transform: translateY(-4px);
+  box-shadow: rgba(113, 50, 245, 0.3) 0px 8px 32px;
+}
+
+.quote-card-content {
+  padding: 32px;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-icon {
+  font-family: 'Kraken-Brand', 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(113, 50, 245, 0.12);
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  user-select: none;
+}
+
+.quote-text {
+  font-family: 'Kraken-Product', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #e8e8f0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.quote-footer {
+  padding: 24px 32px;
+  border-top: 1px solid #2a2a35;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-author {
+  font-family: 'Kraken-Brand', 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #7132f5;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .quote-card-content {
+    padding: 24px;
+  }
+
+  .quote-icon {
+    font-size: 80px;
+    top: 12px;
+    left: 16px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .quote-footer {
+    padding: 20px 24px;
+  }
+
+  .quote-author {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quote-card-content {
+    padding: 20px;
+  }
+
+  .quote-icon {
+    font-size: 60px;
+  }
+
+  .quote-text {
+    font-size: 16px;
+  }
+
+  .quote-author {
+    font-size: 15px;
+  }
+}
